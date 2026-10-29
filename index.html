@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudut Rahasia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="bg-decoration"></div>
+
+    <!-- ==========================================
+         HALAMAN UTAMA: PILIHAN PINTU
+    =========================================== -->
+    <main id="main-hall" class="page-section active">
+        <div class="container">
+            <h1>🚪 Pilih Pintu Kamu 🚪</h1>
+            <p class="subtitle">Ketuk pintunya untuk melangkah masuk ke dalam ruangan...</p>
+
+            <div class="doors-grid">
+                
+                <!-- Pintu 1 -->
+                <div class="door-frame" onclick="enterRoom('room-1')">
+                    <div class="door-interior">✨</div>
+                    <div class="door-leaf">
+                        <div class="door-handle"></div>
+                        <div class="door-number">I</div>
+                        <div class="door-label">The First Glance</div>
+                    </div>
+                </div>
+
+                <!-- Pintu 2 -->
+                <div class="door-frame" onclick="enterRoom('room-2')">
+                    <div class="door-interior">🍂</div>
+                    <div class="door-leaf">
+                        <div class="door-handle"></div>
+                        <div class="door-number">II</div>
+                        <div class="door-label">Echoes of Laughter</div>
+                    </div>
+                </div>
+
+                <!-- Pintu 3 -->
+                <div class="door-frame" onclick="enterRoom('room-3')">
+                    <div class="door-interior">🎵</div>
+                    <div class="door-leaf">
+                        <div class="door-handle"></div>
+                        <div class="door-number">III</div>
+                        <div class="door-label">Melodies We Share</div>
+                    </div>
+                </div>
+
+                <!-- Pintu 4 -->
+                <div class="door-frame" onclick="enterRoom('room-4')">
+                    <div class="door-interior">💌</div>
+                    <div class="door-leaf">
+                        <div class="door-handle"></div>
+                        <div class="door-number">IV</div>
+                        <div class="door-label">Letters in Silence</div>
+                    </div>
+                </div>
+
+                <!-- Pintu 5 -->
+                <div class="door-frame" onclick="enterRoom('room-5')">
+                    <div class="door-interior">☕</div>
+                    <div class="door-leaf">
+                        <div class="door-handle"></div>
+                        <div class="door-number">V</div>
+                        <div class="door-label">The Little Details</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ==========================================
+         RUANGAN 1: THE FIRST GLANCE
+    =========================================== -->
+    <section id="room-1" class="page-section room">
+        <button class="back-btn" onclick="backToHall('room-1')">← Kembali ke Ruang Utama</button>
+        <div class="room-content">
+            <span class="room-tag">ROOM I</span>
+            <h2>The First Glance</h2>
+            <div class="divider"></div>
+            <p>Perhaps fate does not always arrive with the thunder of a dramatic storm; sometimes, it slips in quietly on the static of a midnight FM frequency. It began with a melancholic melody—a stray song of heartache I cast out into the ether, simply searching for an echo in an empty room. I never anticipated that my small plea for a sad tune would summon you from the shadows, carrying the exact harmonies I desperately longed to hear.</p>
+            <p>In that fleeting digital convergence, two wandering strangers paused beneath the flickering lights of a virtual night. There were no grand portents, no sudden shifts in the stars—only the quiet realization that a random coincidence had somehow woven our paths together. A simple track shared in the dark became the invisible threshold we crossed, transforming an ordinary night into the genesis of everything that followed. Like an ember catching fire in a forgotten hearth, a solitary refrain quietly birthed an entire universe of words, laughter, and unwritten tomorrows.</p>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         RUANGAN 2: ECHOES OF LAUGHTER
+    =========================================== -->
+    <section id="room-2" class="page-section room">
+        <button class="back-btn" onclick="backToHall('room-2')">← Kembali ke Ruang Utama</button>
+        <div class="room-content long-content">
+            <span class="room-tag">ROOM II</span>
+            <h2>Echoes of Laughter</h2>
+            <div class="divider"></div>
+            
+            <p>In the midst of exhausting days, law court simulations, and endless piles of files, we somehow found our own chaotic sanctuary within a screen. These captured fragments are living proof that absolute chaos can turn into the sweetest distraction.</p>
+
+            <!-- Galeri Foto + Keterangan Berurutan -->
+            <div class="photo-feed" style="display: flex; flex-direction: column; gap: 35px; margin-top: 30px;">
+                
+                <!-- FOTO 1 -->
+                <div class="photo-item" style="background: #1c1917; border: 1px solid #78350f; padding: 20px; border-radius: 10px;">
+                    <strong style="color: #fbbf24; font-size: 1.1rem; display: block; margin-bottom: 8px;">I. The Infinite Geprek Devotion</strong>
+                    <p style="font-size: 0.95rem; color: #d6d3d1; margin-bottom: 15px; line-height: 1.7;">
+                        A culinary devotion declared right before my eyes, turning a simple box of spicy chicken into our sweetest inside joke.
+                    </p>
+                    <img src="images/foto1.jpg" alt="Ayam Geprek Devotion" style="width: 100%; border-radius: 8px; border: 1px solid #451a03;">
+                </div>
+
+                <!-- FOTO 2 -->
+                <div class="photo-item" style="background: #1c1917; border: 1px solid #78350f; padding: 20px; border-radius: 10px;">
+                    <strong style="color: #fbbf24; font-size: 1.1rem; display: block; margin-bottom: 8px;">II. The Symphony of Busyness</strong>
+                    <p style="font-size: 0.95rem; color: #d6d3d1; margin-bottom: 15px; line-height: 1.7;">
+                        Caught in the relentless current of endless files, organizational chaos, and the quiet fatigue of demanding days.
+                    </p>
+                    <img src="images/foto2.jpg" alt="Symphony of Busyness" style="width: 100%; border-radius: 8px; border: 1px solid #451a03;">
+                </div>
+
+                <!-- FOTO 3 -->
+                <div class="photo-item" style="background: #1c1917; border: 1px solid #78350f; padding: 20px; border-radius: 10px;">
+                    <strong style="color: #fbbf24; font-size: 1.1rem; display: block; margin-bottom: 8px;">III. The Nursing Student's Overload</strong>
+                    <p style="font-size: 0.95rem; color: #d6d3d1; margin-bottom: 15px; line-height: 1.7;">
+                        When the heavy burdens of clinical shifts and sleepless academic nights found a safe, understanding harbor in each other's words.
+                    </p>
+                    <img src="images/foto3.jpg" alt="Nursing Student Overload" style="width: 100%; border-radius: 8px; border: 1px solid #451a03;">
+                </div>
+
+                <!-- FOTO 4 -->
+                <div class="photo-item" style="background: #1c1917; border: 1px solid #78350f; padding: 20px; border-radius: 10px;">
+                    <strong style="color: #fbbf24; font-size: 1.1rem; display: block; margin-bottom: 8px;">IV. The "Ntik" Chronicles</strong>
+                    <p style="font-size: 0.95rem; color: #d6d3d1; margin-bottom: 15px; line-height: 1.7;">
+                        The birth of a cherished moniker—where being called 'ntik' became a gentle, exclusive sanctuary amidst playful teasings.
+                    </p>
+                    <img src="images/foto4.jpg" alt="Ntik Chronicles" style="width: 100%; border-radius: 8px; border: 1px solid #451a03;">
+                </div>
+
+                <!-- FOTO 5 -->
+                <div class="photo-item" style="background: #1c1917; border: 1px solid #78350f; padding: 20px; border-radius: 10px;">
+                    <strong style="color: #fbbf24; font-size: 1.1rem; display: block; margin-bottom: 8px;">V. The Unspoken Comfort</strong>
+                    <p style="font-size: 0.95rem; color: #d6d3d1; margin-bottom: 15px; line-height: 1.7;">
+                        A lingering bickering that always dissolves into warmth, proving we are each other's favorite place to return to.
+                    </p>
+                    <img src="images/foto5.jpg" alt="Unspoken Comfort" style="width: 100%; border-radius: 8px; border: 1px solid #451a03;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         RUANGAN 3: MELODIES WE SHARE
+    =========================================== -->
+    <section id="room-3" class="page-section room">
+        <button class="back-btn" onclick="backToHall('room-3')">← Kembali ke Ruang Utama</button>
+        <div class="room-content long-content">
+            <span class="room-tag">ROOM III</span>
+            <h2>Melodies We Share</h2>
+            <div class="divider"></div>
+            
+            <p>A collection of quiet hours, slow melodies, and the unspoken words we share when the world goes dark. Press play, let the soft notes echo through, and lose yourself in the warmth of our private soundtrack.</p>
+
+            <!-- Container Spotify Embed -->
+            <div class="spotify-container" style="margin-top: 30px; border-radius: 12px; overflow: hidden; border: 1px solid #78350f; background: #1c1917; padding: 15px;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0K6SJryN7t53Wa9rZdJLN0?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         RUANGAN 4: THE WRITTEN SANCTUARY
+    =========================================== -->
+    <section id="room-4" class="page-section room">
+        <button class="back-btn" onclick="backToHall('room-4')">← Kembali ke Ruang Utama</button>
+        <div class="room-content long-content">
+            <span class="room-tag">ROOM IV</span>
+            <h2>The Written Sanctuary</h2>
+            <div class="divider"></div>
+
+            <!-- Tampilan Surat Vintage -->
+            <div class="letter-box" style="background: #1c1917; border: 1px solid #78350f; padding: 30px; border-radius: 12px; margin-top: 25px; line-height: 1.8; color: #e7e5e4; font-size: 0.98rem; text-align: left;">
+                
+                <p style="margin-bottom: 20px; font-style: italic; color: #fbbf24;">To the one who turned quiet days into home,</p>
+
+                <p style="margin-bottom: 18px;">
+                    Looking back at everything, I find myself deeply grateful that our paths crossed. Out of all the timing and coincidences in the world, meeting you remains one of the quietest yet most profound blessings in my life.
+                </p>
+
+                <p style="margin-bottom: 18px;">
+                    Thank you for making that first move and reaching out to me. What started as a simple gesture slowly unfolded into a safe haven I never knew I needed. Thank you, too, for being the remarkably resilient person you are—for standing strong, keeping your chin up, and pushing through even on days when the weight of everything felt overwhelming. Your strength is something I admire more than words can say.
+                </p>
+
+                <p style="margin-bottom: 18px;">
+                    And thank you for endlessly listening to all my endless yapping, my random thoughts, and my daily chaotic stories. You never made me feel like I was too much. Instead, you gave my noisy inner world a comfortable seat and a warm ear. Thank you for making me smile in ways no one else can, and for bringing a gentle kind of happiness into my days.
+                </p>
+
+                <p style="margin-bottom: 20px;">
+                    There are a thousand more little things I am thankful for, but above all, I am simply glad it is you. Thank you for being you, and for letting me be a part of your journey.
+                </p>
+
+                <p style="margin-top: 30px; text-align: right; color: #fbbf24; font-style: italic;">
+                    With all my fondness,<br>
+                    <span style="color: #e7e5e4;">— Always yours</span>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         RUANGAN 5: THE FINAL CHAPTER
+    =========================================== -->
+    <section id="room-5" class="page-section room">
+        <button class="back-btn" onclick="backToHall('room-5')">← Kembali ke Ruang Utama</button>
+        <div class="room-content long-content">
+            <span class="room-tag">ROOM V</span>
+            <h2>The Final Chapter</h2>
+            <div class="divider"></div>
+
+            <p style="font-style: italic; color: #fbbf24; margin-bottom: 25px;">
+                "Before we close this chapter and turn the final page, here are a few little truths, gentle reminders, and funny little things that make every single day with you worth remembering..."
+            </p>
+
+            <!-- List Poin-Poin Vintage -->
+            <div class="archive-list" style="background: #1c1917; border: 1px solid #78350f; border-radius: 12px; padding: 25px; text-align: left; color: #e7e5e4; margin-bottom: 25px;">
+                <ul style="list-style-type: none; padding: 0; margin: 0; line-height: 1.8;">
+                    <li style="margin-bottom: 15px; padding-left: 20px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbbf24;">✦</span>
+                        <b>The Ultimate Geprek Lover:</b> The absolute connoisseur of spicy crushed fried chicken—no matter the hour.
+                    </li>
+                    <li style="margin-bottom: 15px; padding-left: 20px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbbf24;">✦</span>
+                        <b>Vegetable Advisory:</b> A friendly public service announcement: please eat your greens once in a while!
+                    </li>
+                    <li style="margin-bottom: 15px; padding-left: 20px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbbf24;">✦</span>
+                        <b>The Jeno Rivalry:</b> The official professional jealous reactor whenever Jeno is brought up into the conversation.
+                    </li>
+                    <li style="margin-bottom: 15px; padding-left: 20px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbbf24;">✦</span>
+                        <b>Giselle’s Fan Club:</b> Completely, hopelessly, and proudly infatuated with Giselle.
+                    </li>
+                    <li style="margin-bottom: 5px; padding-left: 20px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbbf24;">✦</span>
+                        <b>Night Owl Care:</b> Certified night owl Alfie, who urgently needs a strict reminder to take vitamins and get some proper rest.
+                    </li>
+                </ul>
+            </div>
+
+            <p style="line-height: 1.7; color: #d6d3d1; margin-bottom: 30px;">
+                May our days ahead be filled with more quiet laughter, good food, endless late-night talks, and stories we haven't even written yet. The night is still young, and our book is far from over.
+            </p>
+
+            <!-- Tombol Interaktif -->
+            <button onclick="showSecretMessage()" style="background-color: #78350f; color: #fef3c7; border: 1px solid #fbbf24; padding: 12px 24px; border-radius: 8px; font-family: inherit; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease;">
+                See You in the Next Chapter ✨
+            </button>
+        </div>
+    </section>
+
+    <!-- Script Pop-up Pesan Rahasia -->
+    <script>
+        function showSecretMessage() {
+            alert("No matter what chapter comes next, I hope you're always in it. Sleep well, and see you soon. 📖☕");
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
